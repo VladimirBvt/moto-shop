@@ -1,0 +1,43 @@
+.product {
+	background: white;
+	padding: 10px;
+
+	&__image {
+		// border: 1px dashed red;
+
+		@media (min-width: $breakpoint_md) {
+			height: 200px;
+			object-fit: cover;
+		}
+
+		@media (min-width: $breakpoint_xl) {
+			height: 140px;
+		}
+	}
+
+	&__title {
+		margin-top: 15px;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__copy {
+		margin-top: 5px;
+
+		&:first-of-type {
+			margin-top: 10px;
+		}
+	}
+
+	@media (min-width: $breakpoint_lg) {
+		&__body {
+			font-size: 16px;
+		}
+	}
+
+	@media (min-width: $breakpoint_xl) {
+		&__body {
+			font-size: 18px;
+		}
+	}
+}

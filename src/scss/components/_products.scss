@@ -1,0 +1,24 @@
+.products {
+	padding: 20px;
+
+	&__wrapper {
+		display: grid;
+		gap: 20px;
+
+		@media (min-width: $breakpoint_md) {
+			grid-template-columns: repeat(2, 1fr);
+			margin: 0 auto;
+			max-width: $max_width_wrapper_md;
+		}
+
+		@media (min-width: $breakpoint_lg) {
+			grid-template-columns: repeat(3, 1fr);
+			max-width: $max_width_wrapper_lg;
+		}
+
+		@media (min-width: $breakpoint_xl) {
+			grid-template-columns: repeat(4, 1fr);
+			max-width: $max_width_wrapper_xl;
+		}
+	}
+}

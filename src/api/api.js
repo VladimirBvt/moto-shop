@@ -1,0 +1,1 @@
+export const API_BASE_URL = 'https://lending-c3719-default-rtdb.firebaseio.com/'
